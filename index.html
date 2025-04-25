@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Web App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My Web Project</h1>
+    <nav>
+      <a href="#contact">Contact</a>
+      <a href="#todo">To-Do List</a>
+    </nav>
+  </header>
+
+  <main class="grid-container">
+    <!-- Contact Form -->
+    <section id="contact" class="card">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+        <p id="formError"></p>
+      </form>
+    </section>
+
+    <!-- To-Do List -->
+    <section id="todo" class="card">
+      <h2>To-Do List</h2>
+      <input type="text" id="taskInput" placeholder="Add a task">
+      <button onclick="addTask()">Add Task</button>
+      <ul id="taskList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Alok's Web App</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
